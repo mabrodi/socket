@@ -1,4 +1,4 @@
-package my.project;
+package my.project.test;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -9,7 +9,7 @@ public class Server {
         ServerSocket serverSocket = new ServerSocket(6001);
         Socket socket = serverSocket.accept();
 
-        while(true) {
+        while (true) {
             byte[] buffer = new byte[100];
 
             int count = socket.getInputStream().read(buffer);

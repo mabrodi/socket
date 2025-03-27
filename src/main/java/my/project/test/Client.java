@@ -1,4 +1,4 @@
-package my.project;
+package my.project.test;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -9,7 +9,7 @@ public class Client {
         Socket socket = new Socket("localhost", 6001);
 
         Scanner console = new Scanner(System.in);
-        while(console.hasNextLine()) {
+        while (console.hasNextLine()) {
             socket.getOutputStream().write(console.nextLine().getBytes());
 
             byte[] buffer = new byte[100];
