@@ -1,4 +1,4 @@
-package my.project.reader;
+package org.dimchik.reader;
 
 import java.io.*;
 import java.net.ServerSocket;

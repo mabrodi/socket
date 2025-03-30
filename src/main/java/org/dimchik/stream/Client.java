@@ -1,4 +1,4 @@
-package my.project.stream;
+package org.dimchik.stream;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

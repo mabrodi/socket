@@ -1,4 +1,4 @@
-package my.project.stream;
+package org.dimchik.stream;
 
 import java.io.*;
 import java.net.ServerSocket;
@@ -14,8 +14,8 @@ public class Server {
 
                     byte[] buffer = new byte[100];
 
-                    int count = bufferedInputStream.read(buffer);
-                    while (count != -1) {
+                    int count;
+                    while ((count = bufferedInputStream.read(buffer)) != -1) {
                         String text = "echo: " + new String(buffer, 0, count);
                         bufferedOutputStream.write(text.getBytes());
                         bufferedOutputStream.flush();
