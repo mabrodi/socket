@@ -14,6 +14,7 @@ public class Client {
             while (console.hasNextLine()) {
                 String message = console.nextLine();
                 bufferedWriter.write(message);
+                bufferedWriter.newLine();
                 bufferedWriter.flush();
 
                 String response = bufferedReader.readLine();
